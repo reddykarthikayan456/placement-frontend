@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const API = "http://localhost:8080/job";
-const APP_API = "http://localhost:8080/application";
+const API = `${BASE_URL}/job`;
+const APP_API = `${BASE_URL}/application`;
 const emptyForm = {
   title: "",
   company: "",

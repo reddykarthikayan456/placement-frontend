@@ -11,8 +11,7 @@ export default function App() {
 
   const loadStudents = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/student/get");
-      setStudents(res.data);
+      const res = await axios.get(`${BASE_URL}/student/get`);
       if (res.data.length > 0 && !studentId) {
         setStudentId(res.data[0].id);
       }

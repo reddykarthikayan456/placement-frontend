@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const API = "http://localhost:8080/student";
+const API = `${BASE_URL}/student`;
 const emptyForm = { name: "", email: "", branch: "", cgpa: "", skills: "" };
 
 export default function Students({ students, reload }) {
