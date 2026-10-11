@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { BASE_URL } from "./config";
 
 const API = `${BASE_URL}/job`;
 const APP_API = `${BASE_URL}/application`;
